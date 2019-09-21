@@ -1,1 +1,183 @@
-### Get Docker Image for ubuntu 16.04 and create a container with this image ###>>> docker pull ubuntu:16.0416.04: Pulling from library/ubuntu16c48d79e9cc: Pull complete 3c654ad3ed7d: Pull complete 6276f4f9c29d: Pull complete a4bd43ad48ce: Pull complete Digest: sha256:6239ca16d54d8edd38788aacde7c6426e5999ffbbd7e97ac3cf04d474341d079Status: Downloaded newer image for ubuntu:16.04docker.io/library/ubuntu:16.04>>> docker imagesubuntu              16.04               657d80a6401d        2 days ago          121MB>>> docker run -i -t 657d80a6401droot@cd10f1b6a9b4:/#### Get inside the above container and create a program for addition in python ###docker ps -aCONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMEScd10f1b6a9b4        657d80a6401d        "/bin/bash"              24 seconds ago      Exited (0) 2 seconds ago                        cool_nashtouch pythonexapmle.pychmod a+x pythonexapmle.pyapt-get updateGet:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]Get:2 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]Get:3 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [956 kB]                                              Get:4 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]  Get:5 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]         Get:6 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]                   Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [583 kB]                                                                 Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]                              Get:9 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6114 B]                    Get:10 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]     Get:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]Get:12 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]                                                                                                                          Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1334 kB]                                                                                                                       Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]                                                                                                                 Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [987 kB]                                                                                                                    Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.1 kB]                                                                                                                 Get:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7942 B]                                                                                                                      Get:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8807 B]                                                                                                                  Fetched 16.1 MB in 13s (1168 kB/s)                                                                                                                                                                         Reading package lists... Doneapt-get install nanoReading package lists... DoneBuilding dependency tree       Reading state information... DoneSuggested packages:  spellThe following NEW packages will be installed:  nano0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.Need to get 191 kB of archives.After this operation, 700 kB of additional disk space will be used.Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 nano amd64 2.5.3-2ubuntu2 [191 kB]Fetched 191 kB in 1s (178 kB/s)debconf: delaying package configuration, since apt-utils is not installedSelecting previously unselected package nano.(Reading database ... 4777 files and directories currently installed.)Preparing to unpack .../nano_2.5.3-2ubuntu2_amd64.deb ...Unpacking nano (2.5.3-2ubuntu2) ...Setting up nano (2.5.3-2ubuntu2) ...update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto modeupdate-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto modenano pythonexapmle.pya = int(input("enter first number: "))b = int(input("enter second number: ")) sum = a + b print("sum:", sum)apt-get install pythonReading package lists... DoneBuilding dependency tree       Reading state information... DoneThe following additional packages will be installed:  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python-minimal  python2.7 python2.7-minimalSuggested packages:  python-doc python-tk python2.7-doc binutils binfmt-supportThe following NEW packages will be installed:  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python  python-minimal python2.7 python2.7-minimal0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.Need to get 5720 kB of archives.After this operation, 25.7 MB of additional disk space will be used.Do you want to continue? [Y/n] yGet:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.8 [339 kB]Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.8 [1261 kB]Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.1 kB]Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1 amd64 2.1.0-7ubuntu0.16.04.5 [71.5 kB]Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1.2 [397 kB]Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.15 [1084 kB]Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.8 [1885 kB]Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.8 [224 kB]Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7768 B]Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmagic1 amd64 1:5.25-2ubuntu1.2 [216 kB]Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 file amd64 1:5.25-2ubuntu1.2 [21.2 kB]Fetched 5720 kB in 14s (404 kB/s)                                              debconf: delaying package configuration, since apt-utils is not installedSelecting previously unselected package libpython2.7-minimal:amd64.(Reading database ... 4841 files and directories currently installed.)Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.8_amd64.deb ...Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.8) ...Selecting previously unselected package python2.7-minimal.Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.8_amd64.deb ...Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.8) ...Selecting previously unselected package python-minimal.Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...Unpacking python-minimal (2.7.12-1~16.04) ...Selecting previously unselected package mime-support.Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...Unpacking mime-support (3.59ubuntu1) ...Selecting previously unselected package libexpat1:amd64.Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.5_amd64.deb ...Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.5) ...Selecting previously unselected package libffi6:amd64.Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...Unpacking libffi6:amd64 (3.2.1-4) ...Selecting previously unselected package libsqlite3-0:amd64.Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1.2_amd64.deb ...Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1.2) ...Selecting previously unselected package libssl1.0.0:amd64.Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.15_amd64.deb ...Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...Selecting previously unselected package libpython2.7-stdlib:amd64.Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.8_amd64.deb ...Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.8) ...Selecting previously unselected package python2.7.Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.8_amd64.deb ...Unpacking python2.7 (2.7.12-1ubuntu0~16.04.8) ...Selecting previously unselected package libpython-stdlib:amd64.Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...Processing triggers for libc-bin (2.23-0ubuntu11) ...Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.8) ...Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.8) ...Linking and byte-compiling packages for runtime python2.7...Setting up python-minimal (2.7.12-1~16.04) ...Selecting previously unselected package python.(Reading database ... 5652 files and directories currently installed.)Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...Unpacking python (2.7.12-1~16.04) ...Selecting previously unselected package libmagic1:amd64.Preparing to unpack .../libmagic1_1%3a5.25-2ubuntu1.2_amd64.deb ...Unpacking libmagic1:amd64 (1:5.25-2ubuntu1.2) ...Selecting previously unselected package file.Preparing to unpack .../file_1%3a5.25-2ubuntu1.2_amd64.deb ...Unpacking file (1:5.25-2ubuntu1.2) ...Processing triggers for libc-bin (2.23-0ubuntu11) ...Setting up mime-support (3.59ubuntu1) ...Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.5) ...Setting up libffi6:amd64 (3.2.1-4) ...Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1.2) ...Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...debconf: unable to initialize frontend: Dialogdebconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)debconf: falling back to frontend: Readlinedebconf: unable to initialize frontend: Readlinedebconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)debconf: falling back to frontend: TeletypeSetting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.8) ...Setting up python2.7 (2.7.12-1ubuntu0~16.04.8) ...Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...Setting up python (2.7.12-1~16.04) ...Setting up libmagic1:amd64 (1:5.25-2ubuntu1.2) ...Setting up file (1:5.25-2ubuntu1.2) ...Processing triggers for libc-bin (2.23-0ubuntu11) ...python ÐversionPython 2.7.12### Run program on docker(To run this program you may need to install python on docker) ###python pythonexapmle.pyenter first number: 2enter second number: 3('sum:', 5)
+### Get Docker Image for ubuntu 16.04 and create a container with this image ###
+>>> docker pull ubuntu:16.04
+16.04: Pulling from library/ubuntu
+16c48d79e9cc: Pull complete 
+3c654ad3ed7d: Pull complete 
+6276f4f9c29d: Pull complete 
+a4bd43ad48ce: Pull complete 
+Digest: sha256:6239ca16d54d8edd38788aacde7c6426e5999ffbbd7e97ac3cf04d474341d079
+Status: Downloaded newer image for ubuntu:16.04
+docker.io/library/ubuntu:16.04
+>>> docker images
+ubuntu              16.04               657d80a6401d        2 days ago          121MB
+>>> docker run -i -t 657d80a6401d
+root@cd10f1b6a9b4:/#
+
+### Get inside the above container and create a program for addition in python ###
+>>> docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+cd10f1b6a9b4        657d80a6401d        "/bin/bash"              24 seconds ago      Exited (0) 2 seconds ago                        cool_nash
+>>> touch pythonexapmle.py
+>>> chmod a+x pythonexapmle.py
+>>> apt-get update
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:3 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [956 kB]                                              
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]  
+Get:5 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]         
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]                   
+Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [583 kB]                                                                 
+Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]                              
+Get:9 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6114 B]                    
+Get:10 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]     
+Get:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]                                                                                                                          
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1334 kB]                                                                                                                       
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]                                                                                                                 
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [987 kB]                                                                                                                    
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.1 kB]                                                                                                                 
+Get:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7942 B]                                                                                                                      
+Get:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8807 B]                                                                                                                  
+Fetched 16.1 MB in 13s (1168 kB/s)                                                                                                                                                                         
+Reading package lists... Done
+apt-get install nano
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  spell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 191 kB of archives.
+After this operation, 700 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 nano amd64 2.5.3-2ubuntu2 [191 kB]
+Fetched 191 kB in 1s (178 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 4777 files and directories currently installed.)
+Preparing to unpack .../nano_2.5.3-2ubuntu2_amd64.deb ...
+Unpacking nano (2.5.3-2ubuntu2) ...
+Setting up nano (2.5.3-2ubuntu2) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+>>> nano pythonexapmle.py
+a = int(input("enter first number: "))
+b = int(input("enter second number: "))
+ 
+sum = a + b
+ 
+print("sum:", sum)
+>>> apt-get install python
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python-minimal
+  python2.7 python2.7-minimal
+Suggested packages:
+  python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python
+  python-minimal python2.7 python2.7-minimal
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5720 kB of archives.
+After this operation, 25.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.8 [339 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.8 [1261 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1 amd64 2.1.0-7ubuntu0.16.04.5 [71.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1.2 [397 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.15 [1084 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.8 [1885 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.8 [224 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7768 B]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmagic1 amd64 1:5.25-2ubuntu1.2 [216 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 file amd64 1:5.25-2ubuntu1.2 [21.2 kB]
+Fetched 5720 kB in 14s (404 kB/s)                                              
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 4841 files and directories currently installed.)
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
+Unpacking mime-support (3.59ubuntu1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.5_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.5) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-4) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1.2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1.2) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.15_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.8_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.8) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.8) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.8) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package python.
+(Reading database ... 5652 files and directories currently installed.)
+Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...
+Unpacking python (2.7.12-1~16.04) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.25-2ubuntu1.2_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.25-2ubuntu1.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.25-2ubuntu1.2_amd64.deb ...
+Unpacking file (1:5.25-2ubuntu1.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up mime-support (3.59ubuntu1) ...
+Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.5) ...
+Setting up libffi6:amd64 (3.2.1-4) ...
+Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1.2) ...
+Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.8) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.8) ...
+Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Setting up python (2.7.12-1~16.04) ...
+Setting up libmagic1:amd64 (1:5.25-2ubuntu1.2) ...
+Setting up file (1:5.25-2ubuntu1.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+>>> python Ãversion
+Python 2.7.12
+### Run program on docker(To run this program you may need to install python on docker) ###
+
+>>> python pythonexapmle.py
+enter first number: 2
+enter second number: 3
+('sum:', 5)
+
+
+
