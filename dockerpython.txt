@@ -40,7 +40,7 @@ Get:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [79
 Get:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8807 B]                                                                                                                  
 Fetched 16.1 MB in 13s (1168 kB/s)                                                                                                                                                                         
 Reading package lists... Done
-apt-get install nano
+>>> apt-get install nano
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
